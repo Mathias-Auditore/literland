@@ -1,0 +1,11 @@
+{
+  "name": "literland",
+  "version": "1.0.0",
+  "description": "sitio web de la libreria literland argentina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "auditore mathias",
+  "license": "ISC"
+}
