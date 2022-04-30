@@ -1,0 +1,12 @@
+//mixin//
+@mixin term-section {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+}
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+ }
+ 
