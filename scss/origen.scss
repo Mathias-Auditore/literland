@@ -553,47 +553,47 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.tabla-p {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    border-radius: 20px;
-    background-color: $color-mostrador;
-}
+    .tabla-p {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        border-radius: 20px;
+        background-color: $color-mostrador;
+    }
+    
+    .card {
+        position: relative;
+        overflow: hidden;
+        width: calc(50% - 20px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: $color-mostrador;
+        border: none;
+    }
 
-.card {
-    position: relative;
-    overflow: hidden;
-    width: calc(50% - 20px);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: $color-mostrador;
-    border: none;
+    .titulo {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
 }
-
-.titulo {
-    font-weight: 600;
-    font-size: 20px;
-}
-
 .botonera-p {
     text-align: center;
 }
 
 .boton-p {
-    @extend .boton;
+    @include boton;
     width: 70%;
     font-size: 18px;
+}
 
-    span {
-        position: relative;
-        z-index: 2;
-        transition: .3s ease all;
-    }
+.boton-p span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
 }
 
 .boton-p::after {
@@ -662,30 +662,6 @@ form {
         background-size: 100%;
     }
 
-    .imagen-index>img {
-        width: 35%;
-    }
-}
-
-@media (min-width: map-get($dimensions, desktop)) {
-
-    .wrapper {
-        display: grid;
-        grid-template-columns: 15% 85%;
-        grid-template-areas:
-            "header header"
-            "navbar navbar"
-            "top-ventas top-ventas"
-            "top-generos top-generos"
-            "footer footer";
-
-    }
-
-    .banner {
-        grid-area: banner;
-        background-size: 100%;
-    }
-
     .top-ventas {
         margin: 20px;
     }
@@ -695,7 +671,7 @@ form {
     }
 
     .tabla-index {
-        width: 90%;
+        width: 80%;
         height: 100%;
         background-color: $color-body;
         border: 0px;
@@ -706,12 +682,6 @@ form {
         .card-index {
             display: inline-flex;
             flex-direction: column;
-            justify-content: center;
-            padding-top: 0px;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-            background-color: $color-mostrador;
-            border-radius: 20px;
             width: calc(33.33% - 20px);
         }
 
@@ -720,7 +690,7 @@ form {
             text-align: center;
 
             img {
-                width: 50%;
+                width: 80%;
             }
         }
 
@@ -777,6 +747,113 @@ form {
 
     .top-generos {
 
+
+        .titulo-secundario {
+            padding-top: 20px;
+        }
+    }
+}
+
+@media (min-width: map-get($dimensions, notebook)) {
+
+    .top-generos {
+
+        .tabla-generos {
+            height: 100%;
+        }
+
+        .titulo-secundario{
+            padding-top: 40px;
+        }
+
+        .all-card-generos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-generos {
+            height: 350px;
+        }
+    }
+}
+
+@media (min-width: map-get($dimensions, desktop)) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-areas:
+            "header header"
+            "navbar navbar"
+            "top-ventas top-ventas"
+            "top-generos top-generos"
+            "footer footer";
+
+    }
+
+    .banner {
+        grid-area: banner;
+        background-size: 100%;
+    }
+
+    .top-ventas {
+        margin: 20px;
+    }
+
+    .top-generos {
+        margin: 20px;
+    }
+
+    .tabla-index {
+        width: 90%;
+        height: 100%;
+        border: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .card-index {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            width: calc(33.33% - 20px);
+        }
+
+
+        .imagen-index {
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .botonera {
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        .to-store {
+            width: 60%;
+        }
+
+        .boton {
+            width: 100%;
+            height: 80px;
+        }
+    }
+
+    .boton::after {
+        left: calc(-100% - 80px);
+        border-right: 80px solid transparent;
+        border-bottom: 80px solid green;
+    }
+
+    .top-generos {
+
         .tabla-generos {
             width: 90%;
             height: 100%;
@@ -787,6 +864,10 @@ form {
             grid-area: genero-h2;
         }
 
+        .titulo-secundario{
+            padding-top: 40px;
+        }
+
         .all-card-generos {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -794,20 +875,9 @@ form {
         }
 
         .card-generos {
-            width: 100%;
             height: 350px;
-            border-radius: 20px;
-            background-repeat: no-repeat;
         }
 
-        .titulo-libro {
-            height: 100%;
-            width: 100%;
-        }
-
-        p {
-            color: white;
-        }
     }
 }
 
@@ -1026,12 +1096,12 @@ form {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-    }
 
-    .card {
-        position: relative;
-        overflow: hidden;
-        width: calc(33.33% - 20px);
+        .card {
+            position: relative;
+            overflow: hidden;
+            width: calc(33.33% - 20px);
+        }
     }
 
     .imagen>img {
@@ -1043,8 +1113,8 @@ form {
     }
 
     .boton-p {
-        @extend .boton;
-        width: 50%;
+       @include boton;
+        width: 40%;
         height: 65px;
     }
 

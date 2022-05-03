@@ -168,7 +168,7 @@ footer .redes-logo img {
   text-align: center;
   padding-bottom: 20px;
 }
-.tabla-index .boton, .tabla-index .boton-p {
+.tabla-index .boton {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -187,13 +187,13 @@ footer .redes-logo img {
   overflow: hidden;
 }
 
-.boton span, .boton-p span {
+.boton span {
   position: relative;
   z-index: 2;
   transition: 0.3s ease all;
 }
 
-.boton::after, .boton-p::after {
+.boton::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -206,7 +206,7 @@ footer .redes-logo img {
   transition: 0.4s ease-in-out all;
 }
 
-.boton:hover::after, .boton-p:hover::after {
+.boton:hover::after {
   left: 0;
 }
 
@@ -469,8 +469,7 @@ form .entrecalle #inputAddress2 {
   justify-content: center;
   align-items: center;
 }
-
-.tabla-p {
+.venta .tabla-p {
   width: 90%;
   height: 100%;
   display: flex;
@@ -479,8 +478,7 @@ form .entrecalle #inputAddress2 {
   border-radius: 20px;
   background-color: #D9D4DF;
 }
-
-.card {
+.venta .card {
   position: relative;
   overflow: hidden;
   width: calc(50% - 20px);
@@ -489,8 +487,7 @@ form .entrecalle #inputAddress2 {
   background-color: #D9D4DF;
   border: none;
 }
-
-.titulo {
+.venta .titulo {
   font-weight: 600;
   font-size: 20px;
 }
@@ -500,9 +497,26 @@ form .entrecalle #inputAddress2 {
 }
 
 .boton-p {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+  height: 65px;
+  background: #100E10;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
   width: 70%;
   font-size: 18px;
 }
+
 .boton-p span {
   position: relative;
   z-index: 2;
@@ -560,8 +574,100 @@ form .entrecalle #inputAddress2 {
     background-size: 100%;
   }
 
-  .imagen-index > img {
-    width: 35%;
+  .top-ventas {
+    margin: 20px;
+  }
+
+  .top-generos {
+    margin: 20px;
+  }
+
+  .tabla-index {
+    width: 80%;
+    height: 100%;
+    background-color: #E5DEEE;
+    border: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .tabla-index .card-index {
+    display: inline-flex;
+    flex-direction: column;
+    width: calc(33.33% - 20px);
+  }
+  .tabla-index .imagen-index {
+    text-align: center;
+  }
+  .tabla-index .imagen-index img {
+    width: 80%;
+  }
+  .tabla-index .botonera {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .tabla-index .to-store {
+    width: 60%;
+  }
+  .tabla-index .boton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #100E10;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .boton span {
+    position: relative;
+    z-index: 2;
+    transition: 0.3s ease all;
+  }
+
+  .boton::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 80px);
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid green;
+    transition: 0.4s ease-in-out all;
+  }
+
+  .boton:hover::after {
+    left: 0;
+  }
+
+  .top-generos .titulo-secundario {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 900px) {
+  .top-generos .tabla-generos {
+    height: 100%;
+  }
+  .top-generos .titulo-secundario {
+    padding-top: 40px;
+  }
+  .top-generos .all-card-generos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .top-generos .card-generos {
+    height: 350px;
   }
 }
 @media (min-width: 1200px) {
@@ -587,7 +693,6 @@ form .entrecalle #inputAddress2 {
   .tabla-index {
     width: 90%;
     height: 100%;
-    background-color: #E5DEEE;
     border: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -600,12 +705,7 @@ form .entrecalle #inputAddress2 {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    background-color: #D9D4DF;
-    border-radius: 20px;
     width: calc(33.33% - 20px);
-  }
-  .tabla-index .imagen-index {
-    text-align: center;
   }
   .tabla-index .imagen-index img {
     width: 50%;
@@ -617,45 +717,15 @@ form .entrecalle #inputAddress2 {
   .tabla-index .to-store {
     width: 60%;
   }
-  .tabla-index .boton, .tabla-index .boton-p {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  .tabla-index .boton {
     width: 100%;
     height: 80px;
-    background: #100E10;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.3s ease all;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
   }
 
-  .boton span, .boton-p span {
-    position: relative;
-    z-index: 2;
-    transition: 0.3s ease all;
-  }
-
-  .boton::after, .boton-p::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
+  .boton::after {
     left: calc(-100% - 80px);
     border-right: 80px solid transparent;
     border-bottom: 80px solid green;
-    transition: 0.4s ease-in-out all;
-  }
-
-  .boton:hover::after, .boton-p:hover::after {
-    left: 0;
   }
 
   .top-generos .tabla-generos {
@@ -666,23 +736,16 @@ form .entrecalle #inputAddress2 {
     width: 100%;
     grid-area: genero-h2;
   }
+  .top-generos .titulo-secundario {
+    padding-top: 40px;
+  }
   .top-generos .all-card-generos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
   .top-generos .card-generos {
-    width: 100%;
     height: 350px;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-  }
-  .top-generos .titulo-libro, .top-generos .tabla-index .author, .tabla-index .top-generos .author {
-    height: 100%;
-    width: 100%;
-  }
-  .top-generos p {
-    color: white;
   }
 }
 /* Mediaquire Ubication */
@@ -830,8 +893,7 @@ form .entrecalle #inputAddress2 {
     flex-wrap: wrap;
     gap: 20px;
   }
-
-  .card {
+  .tabla-p .card {
     position: relative;
     overflow: hidden;
     width: calc(33.33% - 20px);
@@ -846,7 +908,23 @@ form .entrecalle #inputAddress2 {
   }
 
   .boton-p {
-    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38%;
+    height: 65px;
+    background: #100E10;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 40%;
     height: 65px;
   }
 
