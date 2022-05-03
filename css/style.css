@@ -26,11 +26,6 @@ body {
   height: 90px;
 }
 
-.h2-index {
-  font-size: 32px;
-  color: #212529;
-}
-
 footer {
   grid-area: footer;
   background-color: #212529;
@@ -117,38 +112,39 @@ footer .redes-logo img {
   justify-content: center;
   align-items: center;
 }
+.top-ventas .h2-index {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #212529;
+}
 
 .tabla-index {
   width: 80%;
-  border: 1px;
-  border-style: solid;
-  border-color: black;
   border-radius: 20px;
-  background-color: #D9D4DF;
+  background-color: #E5DEEE;
 }
-
-.card-index {
+.tabla-index .card-index {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #D9D4DF;
+  border-radius: 20px;
+  margin-bottom: 30px;
 }
-
-.imagen-index {
+.tabla-index .imagen-index {
   text-align: center;
 }
-
-.imagen-index > img {
-  width: 55%;
+.tabla-index .imagen-index img {
+  width: 200px;
   padding-top: 30px;
   padding-bottom: 20px;
 }
-
-.imagen-index > img:hover {
+.tabla-index .imagen-index img:hover {
   transform: scale(1.02);
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
-.titulo-libro {
+.tabla-index .titulo-libro, .tabla-index .author {
   width: 100%;
   height: 100px;
   font-size: 22px;
@@ -156,19 +152,23 @@ footer .redes-logo img {
   text-align: center;
   color: #100E10;
 }
-
-.precio {
-  font-size: 22px;
-  font-weight: 600;
-  color: #1FA02B;
+.tabla-index .titulo-libro p, .tabla-index .author p {
+  margin-bottom: 5px;
 }
-
-.botonera {
+.tabla-index .author {
+  height: 30px;
+  color: #C24C4C;
+}
+.tabla-index .precio {
+  font-size: 30px;
+  font-weight: 600;
+  color: green;
+}
+.tabla-index .botonera {
   text-align: center;
   padding-bottom: 20px;
 }
-
-.boton, .boton-p {
+.tabla-index .boton, .tabla-index .boton-p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -225,6 +225,10 @@ footer .redes-logo img {
 }
 .top-generos .tabla-generos {
   width: 80%;
+}
+.top-generos .titulo-secundario {
+  padding-top: 70px;
+  padding-bottom: 5px;
 }
 .top-generos .card-generos {
   width: 100%;
@@ -589,35 +593,31 @@ form .entrecalle #inputAddress2 {
     flex-wrap: wrap;
     gap: 30px;
   }
-
-  .card-index {
+  .tabla-index .card-index {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-bottom: 0px;
     background-color: #D9D4DF;
     border-radius: 20px;
     width: calc(33.33% - 20px);
   }
-
-  .imagen-index {
+  .tabla-index .imagen-index {
     text-align: center;
   }
-  .imagen-index img {
-    width: 70%;
+  .tabla-index .imagen-index img {
+    width: 50%;
   }
-
-  .botonera {
+  .tabla-index .botonera {
     display: inline-flex;
     justify-content: center;
   }
-
-  .to-store {
+  .tabla-index .to-store {
     width: 60%;
   }
-
-  .boton, .boton-p {
+  .tabla-index .boton, .tabla-index .boton-p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -677,7 +677,7 @@ form .entrecalle #inputAddress2 {
     border-radius: 20px;
     background-repeat: no-repeat;
   }
-  .top-generos .titulo-libro {
+  .top-generos .titulo-libro, .top-generos .tabla-index .author, .tabla-index .top-generos .author {
     height: 100%;
     width: 100%;
   }
