@@ -10,6 +10,19 @@
     height: $height;
  }
 
+ @mixin libro-desc {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+ }
+
+ @mixin precio {
+    font-size: 30px;
+    font-weight: 600;
+    color: green;
+ }
+
  @mixin boton {
         display: inline-flex;
         justify-content: center;
