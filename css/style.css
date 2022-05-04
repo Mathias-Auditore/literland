@@ -141,8 +141,6 @@ footer .redes-logo img {
 }
 .tabla-index .imagen-index img:hover {
   transform: scale(1.02);
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 .tabla-index .titulo-libro, .tabla-index .author {
   width: 100%;
@@ -527,14 +525,11 @@ form .entrecalle #inputAddress2 {
 }
 .venta .imagen {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .venta .imagen img {
   width: 75%;
-}
-.venta .imagen > img:hover {
-  transform: scale(1.1);
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 .venta .precio {
   font-size: 30px;
@@ -542,6 +537,10 @@ form .entrecalle #inputAddress2 {
   color: green;
   font-size: 25px;
   text-align: center;
+}
+
+.imagen > img:hover {
+  transform: scale(1.02);
 }
 
 .boton-p span {
