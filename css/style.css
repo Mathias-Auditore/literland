@@ -474,8 +474,7 @@ form .entrecalle #inputAddress2 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  border-radius: 20px;
-  background-color: #D9D4DF;
+  background-color: #E5DEEE;
 }
 .venta .card {
   position: relative;
@@ -485,6 +484,7 @@ form .entrecalle #inputAddress2 {
   margin-bottom: 20px;
   background-color: #D9D4DF;
   border: none;
+  border-radius: 20px;
 }
 .venta .titulo {
   font-weight: 600;
@@ -522,6 +522,7 @@ form .entrecalle #inputAddress2 {
   overflow: hidden;
   width: 70%;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 .venta .imagen {
   text-align: center;

@@ -539,8 +539,7 @@ form {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        border-radius: 20px;
-        background-color: $color-mostrador;
+        background-color: $color-body;
     }
     
     .card {
@@ -551,6 +550,7 @@ form {
         margin-bottom: 20px;
         background-color: $color-mostrador;
         border: none;
+        border-radius: 20px;
     }
 
     .titulo {
@@ -574,6 +574,7 @@ form {
         @include boton;
         width: 70%;
         font-size: 18px;
+        margin-bottom: 20px;
     }
     
     .imagen {
