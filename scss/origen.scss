@@ -3,7 +3,6 @@
 @import 'fuentes';
 @import 'mixins';
 @import 'variables';
-@import 'mediaquery';
 
 
 /* General & Index */
@@ -621,3 +620,6 @@ form {
 .boton-p:hover::after {
     left: 0;
 }
+
+
+@import 'mediaquery';
