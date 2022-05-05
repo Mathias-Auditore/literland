@@ -112,17 +112,23 @@ footer .redes-logo img {
   justify-content: center;
   align-items: center;
 }
-.top-ventas .h2-index {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 32px;
-  color: #212529;
-}
 
 .tabla-index {
   width: 80%;
   border-radius: 20px;
   background-color: #E5DEEE;
+}
+.tabla-index .h2-index {
+  width: 100%;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  color: grey;
+}
+.tabla-index .view-all-index {
+  margin-left: 16px;
+  font-size: 15px;
+  text-decoration: none;
 }
 .tabla-index .card-index {
   padding-top: 20px;
@@ -226,8 +232,11 @@ footer .redes-logo img {
   width: 80%;
 }
 .top-generos .titulo-secundario {
-  padding-top: 70px;
-  padding-bottom: 5px;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  color: grey;
 }
 .top-generos .card-generos {
   width: 100%;
@@ -655,17 +664,10 @@ form .entrecalle #inputAddress2 {
   .boton:hover::after {
     left: 0;
   }
-
-  .top-generos .titulo-secundario {
-    padding-top: 20px;
-  }
 }
 @media (min-width: 900px) {
   .top-generos .tabla-generos {
     height: 100%;
-  }
-  .top-generos .titulo-secundario {
-    padding-top: 40px;
   }
   .top-generos .all-card-generos {
     display: grid;
@@ -737,13 +739,6 @@ form .entrecalle #inputAddress2 {
   .top-generos .tabla-generos {
     width: 90%;
     height: 100%;
-  }
-  .top-generos h2 {
-    width: 100%;
-    grid-area: genero-h2;
-  }
-  .top-generos .titulo-secundario {
-    padding-top: 40px;
   }
   .top-generos .all-card-generos {
     display: grid;

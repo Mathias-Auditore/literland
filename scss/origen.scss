@@ -123,19 +123,22 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .h2-index {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        font-size: 32px;
-        color: #212529;
-    }
 }
 
 .tabla-index {
     width: 80%;
     border-radius: 20px;
     background-color: $color-body;
+
+    .h2-index {
+        @include subtitulos;
+    }
+
+    .view-all-index{
+        margin-left: 16px;
+        font-size: 15px;
+        text-decoration: none;
+    }
 
     .card-index {
         padding-top: 20px;
@@ -231,8 +234,7 @@ footer {
     }
 
     .titulo-secundario {
-        padding-top: 70px;
-        padding-bottom: 5px;
+        @include subtitulos;
     }
 
     .card-generos {

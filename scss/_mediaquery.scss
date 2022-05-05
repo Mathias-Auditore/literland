@@ -96,14 +96,6 @@
     .boton:hover::after {
         left: 0;
     }
-
-    .top-generos {
-
-
-        .titulo-secundario {
-            padding-top: 20px;
-        }
-    }
 }
 
 @media (min-width: map-get($dimensions, notebook)) {
@@ -112,10 +104,6 @@
 
         .tabla-generos {
             height: 100%;
-        }
-
-        .titulo-secundario{
-            padding-top: 40px;
         }
 
         .all-card-generos {
@@ -209,15 +197,6 @@
         .tabla-generos {
             width: 90%;
             height: 100%;
-        }
-
-        h2 {
-            width: 100%;
-            grid-area: genero-h2;
-        }
-
-        .titulo-secundario{
-            padding-top: 40px;
         }
 
         .all-card-generos {

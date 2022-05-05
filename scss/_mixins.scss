@@ -10,6 +10,14 @@
     height: $height;
  }
 
+ @mixin subtitulos {
+   width: 100%;
+   margin-top: 40px;
+   font-size: 30px;
+   font-weight: 500;
+   color: grey;
+ }
+
  @mixin libro-desc {
     width: 100%;
     font-size: 22px;
