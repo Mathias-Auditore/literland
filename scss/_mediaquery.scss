@@ -143,10 +143,12 @@
 
     .carousel-inner{
         width: 70%;
+        height: 330px;
 
         img{
-            width: 100%;
+            height: 330px;
         }
+
     }
 
     .carousel-control-prev, .carousel-control-next{
@@ -190,7 +192,7 @@
         .imagen-index {
 
             img {
-                width: 50%;
+                width: 60%;
             }
         }
 

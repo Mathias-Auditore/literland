@@ -532,6 +532,11 @@ form {
     justify-content: center;
     align-items: center;
 
+    .h2-product{
+        @include subtitulos;
+        width: 90%;
+    }
+
     .tabla-p {
         width: 90%;
         height: 100%;
