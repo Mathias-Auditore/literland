@@ -54,6 +54,13 @@ footer .redes-logo img {
   grid-area: nav;
 }
 
+.carousel-inner {
+  height: auto;
+}
+.carousel-inner img {
+  width: 100%;
+}
+
 .banner {
   background-image: url(../img/general/sky.jpg);
   background-size: 270%;
@@ -347,7 +354,7 @@ footer > a {
 .ajuste-terms .section-term {
   display: flex;
   justify-content: flex-start;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .banner-terms {
@@ -679,10 +686,19 @@ form .entrecalle #inputAddress2 {
   }
 }
 @media (min-width: 1200px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    grid-template-areas: "header header" "navbar navbar" "top-ventas top-ventas" "top-generos top-generos" "footer footer";
+  #all-carousel-ban {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+  }
+
+  .carousel-inner {
+    width: 90%;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 20%;
   }
 
   .banner {
@@ -781,12 +797,6 @@ form .entrecalle #inputAddress2 {
     grid-area: footer-ubication;
   }
 
-  .wrapper-ubication {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header-ubication header-ubication" "navbar navbar" "maps maps" "footer footer";
-  }
-
   .banner-ubication {
     background-size: 100%;
   }
@@ -816,24 +826,12 @@ form .entrecalle #inputAddress2 {
     grid-area: footer-terms;
   }
 
-  .wrapper-terms {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "navbar navbar" "ajuste-term ajuste-term" "footer footer";
-  }
-
   .banner-terms {
     background-size: 100%;
   }
 }
 /* Mediaquire contact */
 @media (min-width: 480px) {
-  .wrapper-contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "navbar navbar" "formrow formrow" "footer footer";
-  }
-
   .banner-contact {
     background-size: 225%;
   }
@@ -844,12 +842,6 @@ form .entrecalle #inputAddress2 {
   }
 }
 @media (min-width: 1200px) {
-  .wrapper-contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "navbar navbar" "formrow formrow" "footer footer";
-  }
-
   .banner-contact {
     background-size: 100%;
   }
@@ -877,12 +869,6 @@ form .entrecalle #inputAddress2 {
   }
 }
 @media (min-width: 1200px) {
-  .wrapper-product {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "navbar navbar" "venta venta" "footer footer";
-  }
-
   .banner-ubication {
     background-size: 100%;
   }

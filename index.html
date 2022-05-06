@@ -17,7 +17,7 @@
 
 <body>
     <div class="wrapper">
-        <!--Logo-->
+        <!--LOGO-->
         <header class="main-header">
             <div class="encabezado">
                 <a href="index.html"><img class="firstlogo" src="img/general/logo.png"
@@ -26,7 +26,7 @@
 
 
 
-            <!--Nav-->
+            <!--NAV-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="img/general/logo-mini.png"
@@ -73,23 +73,45 @@
                     </div>
                 </div>
             </nav>
+            <!--FIN NAV-->
 
 
-
-
-            <div class="banner">
-                <h1 class="banfirst">Literland</h1>
-                <p class="bansecond">Sumergete en el magico mundo de los libros gracias a Literland</p>
-            </div>
+            <!--CAROUSEL-->
+            <div id="all-carousel-ban" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/general/ejemplo.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/general/ejemplo.png" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/general/ejemplo.png" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#all-carousel-ban" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#all-carousel-ban" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </header>
+        <!--FIN CAROUSEL-->
 
 
 
 
 
 
-
-        <!--Top Libros-->
+        <!--MÁS VENDIDOS-->
         <section class="top-ventas">
 
            
@@ -157,16 +179,15 @@
                                 class="boton"><span>Comprar</span></button></a>
                     </div>
                 </div>
-
-
                 </table>
         </section>
+        <!--FIN MÁS VENDIDOS-->
 
 
 
 
 
-        <!--Top generos-->
+        <!--TOP GENEROS-->
         <section class="top-generos">
 
 

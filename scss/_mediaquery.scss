@@ -120,17 +120,22 @@
 
 @media (min-width: map-get($dimensions, desktop)) {
 
-    .wrapper {
-        display: grid;
-        grid-template-columns: 15% 85%;
-        grid-template-areas:
-            "header header"
-            "navbar navbar"
-            "top-ventas top-ventas"
-            "top-generos top-generos"
-            "footer footer";
-
+    #all-carousel-ban{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
     }
+
+    .carousel-inner{
+        width: 90%;
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        width: 20%;
+    }
+
+
 
     .banner {
         grid-area: banner;
@@ -258,16 +263,6 @@
         grid-area: footer-ubication;
     }
 
-    .wrapper-ubication {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header-ubication header-ubication"
-            "navbar navbar"
-            "maps maps"
-            "footer footer";
-    }
-
     .banner-ubication {
         background-size: 100%;
     }
@@ -312,16 +307,6 @@
         grid-area: footer-terms;
     }
 
-    .wrapper-terms {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
-            "navbar navbar"
-            "ajuste-term ajuste-term"
-            "footer footer";
-    }
-
     .banner-terms {
         background-size: 100%;
     }
@@ -335,15 +320,6 @@
 
 /* Mediaquire contact */
 @media (min-width: map-get($dimensions, phone)) {
-    .wrapper-contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
-            "navbar navbar"
-            "formrow formrow"
-            "footer footer";
-    }
 
     .banner-contact {
         background-size: 225%;
@@ -357,15 +333,6 @@
 }
 
 @media (min-width: map-get($dimensions, desktop)) {
-    .wrapper-contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
-            "navbar navbar"
-            "formrow formrow"
-            "footer footer";
-    }
 
     .banner-contact {
         background-size: 100%;
@@ -406,16 +373,6 @@
 }
 
 @media (min-width: map-get($dimensions, desktop)) {
-
-    .wrapper-product {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
-            "navbar navbar"
-            "venta venta"
-            "footer footer";
-    }
 
     .banner-ubication {
         background-size: 100%;
