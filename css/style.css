@@ -105,12 +105,6 @@ footer .redes-logo img {
   border-color: white;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-areas: "header header" "navbar navbar" "top-ventas top-ventas" "top-generos top-generos" "footer footer";
-}
-
 .top-ventas {
   grid-area: top-ventas;
   margin: 5px;
@@ -686,6 +680,20 @@ form .entrecalle #inputAddress2 {
   }
 }
 @media (min-width: 1200px) {
+  header {
+    background-color: #212529;
+  }
+
+  .wrapper {
+    max-width: 1900px;
+    margin: auto;
+  }
+
+  .navbar {
+    max-width: 1900px;
+    margin: auto;
+  }
+
   #all-carousel-ban {
     display: flex;
     justify-content: center;
@@ -694,11 +702,14 @@ form .entrecalle #inputAddress2 {
   }
 
   .carousel-inner {
-    width: 90%;
+    width: 70%;
+  }
+  .carousel-inner img {
+    width: 100%;
   }
 
   .carousel-control-prev, .carousel-control-next {
-    width: 20%;
+    width: 35%;
   }
 
   .banner {
@@ -715,7 +726,7 @@ form .entrecalle #inputAddress2 {
   }
 
   .tabla-index {
-    width: 90%;
+    width: 70%;
     height: 100%;
     border: 0px;
     display: flex;
@@ -753,7 +764,7 @@ form .entrecalle #inputAddress2 {
   }
 
   .top-generos .tabla-generos {
-    width: 90%;
+    width: 70%;
     height: 100%;
   }
   .top-generos .all-card-generos {

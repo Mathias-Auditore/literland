@@ -16,97 +16,99 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!--LOGO-->
-        <header class="main-header">
-            <div class="encabezado">
-                <a href="index.html"><img class="firstlogo" src="img/general/logo.png"
-                        alt="logo linkeado al inicio de literland"></a>
+    <!--LOGO-->
+    <header class="main-header">
+        <div class="encabezado">
+            <a href="index.html"><img class="firstlogo" src="img/general/logo.png"
+                    alt="logo linkeado al inicio de literland"></a>
+        </div>
+
+
+
+        <!--NAV-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/general/logo-mini.png"
+                        alt="logo linkeado al inicio de literland" width="50" height="50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Libros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/product.html">Más vendidos</a></li>
+                                <li><a class="dropdown-item" href="pages/aventura.html">Aventura</a></li>
+                                <li><a class="dropdown-item" href="pages/fantastico.html">Fantástico</a></li>
+                                <li><a class="dropdown-item" href="pages/romance.html">Romance</a></li>
+                                <li><a class="dropdown-item" href="pages/ingles.html">En inglés</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Test literario</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/ubication.html">Ubicación</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Busca tu libro" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
+        </nav>
+        <!--FIN NAV-->
 
 
 
-            <!--NAV-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="img/general/logo-mini.png"
-                            alt="logo linkeado al inicio de literland" width="50" height="50"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/contact.html">Contacto</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Libros
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="pages/product.html">Más vendidos</a></li>
-                                    <li><a class="dropdown-item" href="pages/aventura.html">Aventura</a></li>
-                                    <li><a class="dropdown-item" href="pages/fantastico.html">Fantástico</a></li>
-                                    <li><a class="dropdown-item" href="pages/romance.html">Romance</a></li>
-                                    <li><a class="dropdown-item" href="pages/ingles.html">En inglés</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Test literario</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/ubication.html">Ubicación</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Busca tu libro"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                    </div>
+    </header>
+
+    <div class="wrapper">
+        <!--CAROUSEL-->
+        <div id="all-carousel-ban" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/general/banner-trilogy-shelby.png" class="d-block" alt="...">
                 </div>
-            </nav>
-            <!--FIN NAV-->
-
-
-            <!--CAROUSEL-->
-            <div id="all-carousel-ban" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#all-carousel-ban" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="carousel-item">
+                    <img src="img/general/banner-trilogy-shelby.png" class="d-block" alt="...">
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/general/ejemplo.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/general/ejemplo.png" class="d-block" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/general/ejemplo.png" class="d-block" alt="...">
-                  </div>
+                <div class="carousel-item">
+                    <img src="img/general/banner-trilogy-shelby.png" class="d-block" alt="...">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#all-carousel-ban" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#all-carousel-ban" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </header>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#all-carousel-ban" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#all-carousel-ban" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <!--FIN CAROUSEL-->
-
-
 
 
 
@@ -114,7 +116,7 @@
         <!--MÁS VENDIDOS-->
         <section class="top-ventas">
 
-           
+
 
             <div class="tabla-index">
 
@@ -231,25 +233,23 @@
             </table>
         </section>
 
-
-
-
-        <footer>
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-                <li class="nav-item"><a href="pages/ubication.html" class="nav-link px-2 text-muted">Ubicación</a></li>
-                <li class="nav-item"><a href="pages/terms.html" class="nav-link px-2 text-muted">Terminos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
-            </ul>
-            <p class="text-center text-muted">© 2022 Literland, S.R.L.</p>
-            <div class="redes-logo">
-                <a href="#"><img src="img/general/ig-logo.png" alt="logo linkeado a instagram"></a>
-                <a href="#"><img src="img/general/tw-logo.png" alt="logo linkeado a twitter"></a>
-            </div>
-        </footer>
-
     </div>
+
+
+    <footer>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="pages/ubication.html" class="nav-link px-2 text-muted">Ubicación</a></li>
+            <li class="nav-item"><a href="pages/terms.html" class="nav-link px-2 text-muted">Terminos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Literland, S.R.L.</p>
+        <div class="redes-logo">
+            <a href="#"><img src="img/general/ig-logo.png" alt="logo linkeado a instagram"></a>
+            <a href="#"><img src="img/general/tw-logo.png" alt="logo linkeado a twitter"></a>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

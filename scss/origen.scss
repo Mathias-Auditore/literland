@@ -113,17 +113,6 @@ footer {
     border-color: white;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-areas:
-        "header header"
-        "navbar navbar"
-        "top-ventas top-ventas"
-        "top-generos top-generos"
-        "footer footer";
-}
-
 .top-ventas {
     grid-area: top-ventas;
     margin: 5px;
