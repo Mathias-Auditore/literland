@@ -1,17 +1,24 @@
 /* Mediaquire index and general*/
 @media (min-width: map-get($dimensions, phone)) {
 
-    .banner {
-        grid-area: banner;
-        background-size: 134%;
+    .carousel-inner{
+        height: auto;
+
+        img{
+            height: 100%;
+        }
+
     }
 }
 
 @media (min-width: map-get($dimensions, tablet)) {
 
-    .banner {
-        grid-area: banner;
-        background-size: 100%;
+    .carousel-inner{
+        height: auto;
+
+        img{
+            height: auto;
+        }
     }
 
     .top-ventas {
@@ -100,6 +107,15 @@
 
 @media (min-width: map-get($dimensions, notebook)) {
 
+    .carousel-inner{
+        height: auto;
+
+        img{
+            height: auto;
+        }
+
+    }
+
     .top-generos {
 
         .tabla-generos {
@@ -143,10 +159,10 @@
 
     .carousel-inner{
         width: 70%;
-        height: 330px;
+        height: 350px;
 
         img{
-            height: 330px;
+            height: 350px;
         }
 
     }
@@ -390,6 +406,12 @@
     .banner-product {
         background-size: 100%;
     }
+
+    .tabla-p {
+        .titulo{
+            height: 100px;
+        }
+    }
 }
 
 @media (min-width: map-get($dimensions, desktop)) {
@@ -409,6 +431,10 @@
             position: relative;
             overflow: hidden;
             width: calc(33.33% - 20px);
+        }
+
+        .titulo{
+            height: 100px;
         }
 
         .imagen>img {

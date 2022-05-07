@@ -509,7 +509,7 @@ form .entrecalle #inputAddress2 {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  height: 100px;
+  height: 140px;
 }
 .venta .author-p {
   width: 100%;
@@ -589,15 +589,19 @@ form .entrecalle #inputAddress2 {
 
 /* Mediaquire index and general*/
 @media (min-width: 480px) {
-  .banner {
-    grid-area: banner;
-    background-size: 134%;
+  .carousel-inner {
+    height: auto;
+  }
+  .carousel-inner img {
+    height: 100%;
   }
 }
 @media (min-width: 768px) {
-  .banner {
-    grid-area: banner;
-    background-size: 100%;
+  .carousel-inner {
+    height: auto;
+  }
+  .carousel-inner img {
+    height: auto;
   }
 
   .top-ventas {
@@ -677,6 +681,13 @@ form .entrecalle #inputAddress2 {
   }
 }
 @media (min-width: 900px) {
+  .carousel-inner {
+    height: auto;
+  }
+  .carousel-inner img {
+    height: auto;
+  }
+
   .top-generos .tabla-generos {
     height: 100%;
   }
@@ -713,10 +724,10 @@ form .entrecalle #inputAddress2 {
 
   .carousel-inner {
     width: 70%;
-    height: 330px;
+    height: 350px;
   }
   .carousel-inner img {
-    height: 330px;
+    height: 350px;
   }
 
   .carousel-control-prev, .carousel-control-next {
@@ -889,6 +900,10 @@ form .entrecalle #inputAddress2 {
   .banner-product {
     background-size: 100%;
   }
+
+  .tabla-p .titulo {
+    height: 100px;
+  }
 }
 @media (min-width: 1200px) {
   .banner-ubication {
@@ -906,6 +921,9 @@ form .entrecalle #inputAddress2 {
     position: relative;
     overflow: hidden;
     width: calc(33.33% - 20px);
+  }
+  .tabla-p .titulo {
+    height: 100px;
   }
   .tabla-p .imagen > img {
     width: 60%;
