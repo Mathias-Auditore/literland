@@ -138,6 +138,9 @@ footer .redes-logo img {
   border-radius: 20px;
   margin-bottom: 30px;
 }
+.tabla-index a {
+  text-decoration: none;
+}
 .tabla-index .imagen-index {
   text-align: center;
 }
@@ -151,24 +154,25 @@ footer .redes-logo img {
 }
 .tabla-index .titulo-libro, .tabla-index .author {
   width: 100%;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
   height: 100px;
-  color: #100E10;
+  color: #C24C4C;
 }
 .tabla-index .titulo-libro p, .tabla-index .author p {
   margin-bottom: 5px;
 }
 .tabla-index .author {
   height: 30px;
-  color: #C24C4C;
+  font-weight: 500;
+  color: black;
 }
 .tabla-index .precio {
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 30px;
-  color: green;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+  color: black;
   text-align: center;
 }
 .tabla-index .botonera {
@@ -442,14 +446,6 @@ form .entrecalle #inputAddress2 {
 }
 
 /* Product */
-.header-product {
-  grid-area: header;
-}
-
-.main-menu-product {
-  grid-area: nav;
-}
-
 .banner-product {
   background-image: url(../img/general/sky.jpg);
   background-size: 150%;
@@ -472,12 +468,11 @@ form .entrecalle #inputAddress2 {
 }
 
 .venta {
-  margin: 20px;
-  grid-area: venta;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 .venta .h2-product {
   width: 100%;
@@ -487,11 +482,14 @@ form .entrecalle #inputAddress2 {
   color: grey;
   width: 90%;
 }
+.venta a {
+  text-decoration: none;
+}
 .venta .tabla-p {
-  width: 90%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 20px;
   gap: 20px;
   background-color: #E5DEEE;
 }
@@ -509,15 +507,17 @@ form .entrecalle #inputAddress2 {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  height: 140px;
+  height: 110px;
+  color: #C24C4C;
 }
 .venta .author-p {
   width: 100%;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
   height: 40px;
-  color: #C24C4C;
+  font-weight: 500;
+  color: black;
 }
 .venta .botonera-p {
   text-align: center;
@@ -552,11 +552,10 @@ form .entrecalle #inputAddress2 {
   width: 75%;
 }
 .venta .precio {
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 30px;
-  color: green;
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+  color: black;
   text-align: center;
 }
 
@@ -730,7 +729,8 @@ form .entrecalle #inputAddress2 {
     height: 350px;
   }
 
-  .carousel-control-prev, .carousel-control-next {
+  .carousel-control-prev,
+.carousel-control-next {
     width: 35%;
   }
 
@@ -906,32 +906,41 @@ form .entrecalle #inputAddress2 {
   }
 }
 @media (min-width: 1200px) {
+  .wrapper-product {
+    max-width: 1900px;
+    margin: auto;
+  }
+
+  .navbar {
+    max-width: 1900px;
+    margin: auto;
+  }
+
   .banner-ubication {
     background-size: 100%;
   }
 
-  .tabla-p {
-    width: 90%;
-    height: 100%;
+  .venta .tabla-p {
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
-  .tabla-p .card {
+  .venta .card {
     position: relative;
     overflow: hidden;
     width: calc(33.33% - 20px);
   }
-  .tabla-p .titulo {
+  .venta .titulo {
     height: 100px;
   }
-  .tabla-p .imagen > img {
+  .venta .imagen > img {
     width: 60%;
   }
-  .tabla-p .botonera-p {
+  .venta .botonera-p {
     text-align: center;
   }
-  .tabla-p .boton-p {
+  .venta .boton-p {
     display: inline-flex;
     justify-content: center;
     align-items: center;

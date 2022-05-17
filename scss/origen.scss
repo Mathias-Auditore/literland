@@ -145,6 +145,10 @@ footer {
         margin-bottom: 30px;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .imagen-index {
         text-align: center;
 
@@ -162,7 +166,7 @@ footer {
     .titulo-libro {
         @include libro-desc;
         height: 100px;
-        color: #100E10;
+        color: #C24C4C;
 
         p {
             margin-bottom: 5px;
@@ -172,6 +176,7 @@ footer {
     .author {
         @extend .titulo-libro;
         height: 30px;
+        font-weight: 500;
         color: $color-autor;
     }
 
@@ -492,13 +497,6 @@ form {
 
 
 /* Product */
-.header-product {
-    grid-area: header;
-}
-
-.main-menu-product {
-    grid-area: nav;
-}
 
 .banner-product {
     background-image: url(../img/general/sky.jpg);
@@ -525,23 +523,26 @@ form {
 }
 
 .venta {
-    margin: 20px;
-    grid-area: venta;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 
     .h2-product{
         @include subtitulos;
         width: 90%;
     }
 
+    a{
+        text-decoration: none;
+    }
+
     .tabla-p {
-        width: 90%;
         height: 100%;
         display: flex;
         flex-wrap: wrap;
+        margin-left: 20px;
         gap: 20px;
         background-color: $color-body;
     }
@@ -561,12 +562,14 @@ form {
         font-weight: 600;
         font-size: 20px;
         text-align: center;
-        height: 140px;
+        height: 110px;
+        color: #C24C4C
     }
 
     .author-p {
         @include libro-desc;
         height: 40px;
+        font-weight: 500;
         color: $color-autor;
     }
     
@@ -593,7 +596,6 @@ form {
     
     .precio {
         @include precio;
-        font-size: 25px;
         text-align: center;
     }
 }

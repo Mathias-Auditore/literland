@@ -1,10 +1,10 @@
 /* Mediaquire index and general*/
 @media (min-width: map-get($dimensions, phone)) {
 
-    .carousel-inner{
+    .carousel-inner {
         height: auto;
 
-        img{
+        img {
             height: 100%;
         }
 
@@ -13,10 +13,10 @@
 
 @media (min-width: map-get($dimensions, tablet)) {
 
-    .carousel-inner{
+    .carousel-inner {
         height: auto;
 
-        img{
+        img {
             height: auto;
         }
     }
@@ -107,10 +107,10 @@
 
 @media (min-width: map-get($dimensions, notebook)) {
 
-    .carousel-inner{
+    .carousel-inner {
         height: auto;
 
-        img{
+        img {
             height: auto;
         }
 
@@ -136,38 +136,39 @@
 
 @media (min-width: map-get($dimensions, desktop)) {
 
-    header{
+    header {
         background-color: $color-footer;
     }
 
-    .wrapper{
+    .wrapper {
         max-width: 1900px;
         margin: auto;
     }
 
-    .navbar{
+    .navbar {
         max-width: 1900px;
         margin: auto;
     }
 
-    #all-carousel-ban{
+    #all-carousel-ban {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0px 20px;
     }
 
-    .carousel-inner{
+    .carousel-inner {
         width: 70%;
         height: 350px;
 
-        img{
+        img {
             height: 350px;
         }
 
     }
 
-    .carousel-control-prev, .carousel-control-next{
+    .carousel-control-prev,
+    .carousel-control-next {
         width: 35%;
     }
 
@@ -408,7 +409,7 @@
     }
 
     .tabla-p {
-        .titulo{
+        .titulo {
             height: 100px;
         }
     }
@@ -416,16 +417,28 @@
 
 @media (min-width: map-get($dimensions, desktop)) {
 
+    .wrapper-product{
+        max-width: 1900px;
+        margin: auto;
+    }
+
+    .navbar{
+        max-width: 1900px;
+        margin: auto;
+    }
+
     .banner-ubication {
         background-size: 100%;
     }
 
-    .tabla-p {
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+    .venta {
+
+        .tabla-p {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
         .card {
             position: relative;
@@ -433,20 +446,20 @@
             width: calc(33.33% - 20px);
         }
 
-        .titulo{
+        .titulo {
             height: 100px;
         }
 
         .imagen>img {
             width: 60%;
         }
-    
+
         .botonera-p {
             text-align: center;
         }
-    
+
         .boton-p {
-           @include boton;
+            @include boton;
             width: 40%;
             height: 65px;
         }
