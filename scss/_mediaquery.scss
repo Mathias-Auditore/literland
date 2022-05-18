@@ -336,14 +336,6 @@
 
 @media (min-width: map-get($dimensions, desktop)) {
 
-    .header-terms {
-        grid-area: header;
-    }
-
-    .footer-terms {
-        grid-area: footer-terms;
-    }
-
     .banner-terms {
         background-size: 100%;
     }
@@ -490,18 +482,9 @@
 
 /* Mediaqueries Final Product*/
 
-@media (min-width: map-get($dimensions, desktop)) {
-
-    .final-product{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        max-width: 1900px;
-        margin: auto;
-    }
+@media (min-width: map-get($dimensions, tablet)) {
 
     .venta-final {
-        width: 70%;
 
         .mostrador-libro {
             width: 25%;
@@ -527,6 +510,36 @@
                 width: 100%;
             }
         }
+
+        .datos-libro{
+            
+            .sinopsis{
+                width: 100%;
+            }
+
+            .autoria{
+                width: 100%;
+            }
+        }
+
+
+    }
+
+}
+
+
+@media (min-width: map-get($dimensions, desktop)) {
+
+    .final-product{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 1900px;
+        margin: auto;
+    }
+
+    .venta-final {
+        width: 70%;
 
 
     }

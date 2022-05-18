@@ -978,14 +978,6 @@ form .entrecalle #inputAddress2 {
   }
 }
 @media (min-width: 1200px) {
-  .header-terms {
-    grid-area: header;
-  }
-
-  .footer-terms {
-    grid-area: footer-terms;
-  }
-
   .banner-terms {
     background-size: 100%;
   }
@@ -1111,18 +1103,7 @@ form .entrecalle #inputAddress2 {
   }
 }
 /* Mediaqueries Final Product*/
-@media (min-width: 1200px) {
-  .final-product {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    max-width: 1900px;
-    margin: auto;
-  }
-
-  .venta-final {
-    width: 70%;
-  }
+@media (min-width: 768px) {
   .venta-final .mostrador-libro {
     width: 25%;
   }
@@ -1141,6 +1122,25 @@ form .entrecalle #inputAddress2 {
   }
   .venta-final .comprar .boton-p {
     width: 100%;
+  }
+  .venta-final .datos-libro .sinopsis {
+    width: 100%;
+  }
+  .venta-final .datos-libro .autoria {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .final-product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 1900px;
+    margin: auto;
+  }
+
+  .venta-final {
+    width: 70%;
   }
 }
 
