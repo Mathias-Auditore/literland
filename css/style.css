@@ -586,6 +586,53 @@ form .entrecalle #inputAddress2 {
   left: 0;
 }
 
+/* Final Product*/
+.venta-final {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.venta-final .mostrador-libro {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.venta-final .mostrador-libro img {
+  width: 200px;
+  text-align: center;
+}
+.venta-final .comprar {
+  background-color: #D9D4DF;
+}
+.venta-final .comprar .botonera-p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.venta-final .comprar .boton-p {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+  height: 65px;
+  background: #100E10;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  background-color: #2D3339;
+  width: 70%;
+}
+.venta-final .datos-libro {
+  border-top: 1px solid grey;
+  width: 100%;
+}
+
 /* Mediaquire index and general*/
 @media (min-width: 480px) {
   .carousel-inner {

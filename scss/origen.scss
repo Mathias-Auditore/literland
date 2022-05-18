@@ -628,4 +628,44 @@ form {
 }
 
 
+/* Final Product*/
+.venta-final{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .mostrador-libro{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+
+        img{
+            width: 200px;
+            text-align: center;
+        }
+    }
+
+    .comprar{
+        background-color: $color-mostrador;
+
+        .botonera-p{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .boton-p{
+            @include boton;
+            background-color: #2D3339;
+            width: 70%;
+        }
+    }
+
+    .datos-libro{
+        border-top: 1px solid grey;
+        width: 100%
+    }
+
+}
+
+
 @import 'mediaquery';
