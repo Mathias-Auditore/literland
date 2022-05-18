@@ -594,6 +594,8 @@ form .entrecalle #inputAddress2 {
 }
 .venta-final .mostrador-libro {
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   width: 100%;
   text-align: center;
 }
@@ -603,6 +605,33 @@ form .entrecalle #inputAddress2 {
 }
 .venta-final .comprar {
   background-color: #D9D4DF;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+}
+.venta-final .comprar h1 {
+  font-weight: 600;
+}
+.venta-final .comprar .precio-final {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+  color: black;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 0%;
+}
+.venta-final .comprar .medios-pago {
+  text-decoration: none;
+  font-size: 15px;
+}
+.venta-final .comprar .ficha-tecnica {
+  margin-top: 20px;
+  font-size: 25px;
+  color: grey;
+}
+.venta-final .comprar ul {
+  list-style: none;
 }
 .venta-final .comprar .botonera-p {
   text-align: center;
@@ -631,6 +660,13 @@ form .entrecalle #inputAddress2 {
 .venta-final .datos-libro {
   border-top: 1px solid grey;
   width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.venta-final .datos-libro .sinopsis {
+  margin-top: 20px;
+  font-size: 25px;
+  color: grey;
 }
 
 /* Mediaquire index and general*/

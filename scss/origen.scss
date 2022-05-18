@@ -636,6 +636,8 @@ form {
 
     .mostrador-libro{
         margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
         width: 100%;
         text-align: center;
 
@@ -647,6 +649,35 @@ form {
 
     .comprar{
         background-color: $color-mostrador;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+
+        h1{
+            font-weight: 600
+        }
+
+        .precio-final{
+            @include precio;
+            font-weight: 500;
+            font-size: 25px;
+            margin-bottom: 0%;
+        }
+
+        .medios-pago{
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .ficha-tecnica{
+            margin-top: 20px;
+            font-size: 25px;
+            color: grey;
+        }
+
+        ul{
+            list-style: none;
+        }
 
         .botonera-p{
             text-align: center;
@@ -658,11 +689,21 @@ form {
             background-color: #2D3339;
             width: 70%;
         }
+
+        
     }
 
     .datos-libro{
         border-top: 1px solid grey;
-        width: 100%
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .sinopsis{
+            margin-top: 20px;
+            font-size: 25px;
+            color: grey;
+        }
     }
 
 }
