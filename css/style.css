@@ -659,6 +659,7 @@ form .entrecalle #inputAddress2 {
 }
 .venta-final .datos-libro {
   border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
@@ -668,8 +669,51 @@ form .entrecalle #inputAddress2 {
   font-size: 25px;
   color: grey;
 }
+.venta-final .datos-libro p {
+  margin-left: 20px;
+}
+.venta-final .datos-libro .autoria {
+  margin-top: 20px;
+  font-size: 25px;
+  color: grey;
+}
+.venta-final .relacionados {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #D9D4DF;
+  display: flex;
+  flex-wrap: wrap;
+}
+.venta-final .relacionados h4 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: grey;
+  color: black;
+  width: 100%;
+}
+.venta-final .relacionados .relacion-card {
+  width: 190px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.venta-final .relacionados .relacion-card img {
+  margin-top: 20px;
+  width: 180px;
+}
+.venta-final .relacionados .relacion-card .titulo-final p {
+  margin-bottom: 10px;
+  font-weight: 500;
+  height: 20px;
+}
+.venta-final .relacionados .relacion-card a {
+  text-decoration: none;
+  color: black;
+}
 
-/* Mediaquire index and general*/
+/* Mediaquery index and general*/
 @media (min-width: 480px) {
   .carousel-inner {
     height: auto;
@@ -881,7 +925,7 @@ form .entrecalle #inputAddress2 {
     height: 350px;
   }
 }
-/* Mediaquire Ubication */
+/* Mediaquery Ubication */
 @media (min-width: 480px) {
   .banner-ubication {
     background-size: 225%;
@@ -917,7 +961,7 @@ form .entrecalle #inputAddress2 {
     background-size: 100%;
   }
 }
-/* Mediaquire Terms */
+/* Mediaquery Terms */
 @media (min-width: 480px) {
   .banner-terms {
     background-size: 225%;
@@ -946,7 +990,7 @@ form .entrecalle #inputAddress2 {
     background-size: 100%;
   }
 }
-/* Mediaquire contact */
+/* Mediaquery contact */
 @media (min-width: 480px) {
   .banner-contact {
     background-size: 225%;
@@ -973,7 +1017,7 @@ form .entrecalle #inputAddress2 {
     height: 100%;
   }
 }
-/* mediaquire Product */
+/* mediaqueris Product */
 @media (min-width: 480px) {
   .banner-product {
     background-size: 225%;
@@ -1064,6 +1108,39 @@ form .entrecalle #inputAddress2 {
 
   .boton-p:hover::after {
     left: 0;
+  }
+}
+/* Mediaqueries Final Product*/
+@media (min-width: 1200px) {
+  .final-product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 1900px;
+    margin: auto;
+  }
+
+  .venta-final {
+    width: 70%;
+  }
+  .venta-final .mostrador-libro {
+    width: 25%;
+  }
+  .venta-final .mostrador-libro img {
+    width: 250px;
+  }
+  .venta-final .comprar {
+    margin-top: 20px;
+    width: calc(75% - 100px);
+  }
+  .venta-final .comprar h1 {
+    text-align: center;
+  }
+  .venta-final .comprar .botonera-p {
+    width: 50%;
+  }
+  .venta-final .comprar .boton-p {
+    width: 100%;
   }
 }
 

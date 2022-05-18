@@ -1,4 +1,4 @@
-/* Mediaquire index and general*/
+/* Mediaquery index and general*/
 @media (min-width: map-get($dimensions, phone)) {
 
     .carousel-inner {
@@ -263,7 +263,7 @@
 
 
 
-/* Mediaquire Ubication */
+/* Mediaquery Ubication */
 @media (min-width: map-get($dimensions, phone)) {
 
     .banner-ubication {
@@ -315,7 +315,7 @@
 
 
 
-/* Mediaquire Terms */
+/* Mediaquery Terms */
 @media (min-width: map-get($dimensions, phone)) {
 
     .banner-terms {
@@ -355,7 +355,7 @@
 
 
 
-/* Mediaquire contact */
+/* Mediaquery contact */
 @media (min-width: map-get($dimensions, phone)) {
 
     .banner-contact {
@@ -394,7 +394,7 @@
 
 
 
-/* mediaquire Product */
+/* mediaqueris Product */
 @media (min-width: map-get($dimensions, phone)) {
 
     .banner-product {
@@ -417,12 +417,12 @@
 
 @media (min-width: map-get($dimensions, desktop)) {
 
-    .wrapper-product{
+    .wrapper-product {
         max-width: 1900px;
         margin: auto;
     }
 
-    .navbar{
+    .navbar {
         max-width: 1900px;
         margin: auto;
     }
@@ -486,4 +486,50 @@
     .boton-p:hover::after {
         left: 0;
     }
+}
+
+/* Mediaqueries Final Product*/
+
+@media (min-width: map-get($dimensions, desktop)) {
+
+    .final-product{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 1900px;
+        margin: auto;
+    }
+
+    .venta-final {
+        width: 70%;
+
+        .mostrador-libro {
+            width: 25%;
+
+            img{
+                width: 250px;
+            }
+        }
+
+        .comprar{
+            margin-top: 20px;
+            width: calc(75% - 100px);
+
+            h1{
+                text-align: center;
+            }
+
+            .botonera-p{
+                width: 50%;
+            }
+    
+            .boton-p {
+                width: 100%;
+            }
+        }
+
+
+    }
+
+
 }

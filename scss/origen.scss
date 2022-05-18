@@ -57,10 +57,10 @@ footer {
     grid-area: nav;
 }
 
-.carousel-inner{
+.carousel-inner {
     height: auto;
 
-    img{
+    img {
         width: 100%;
     }
 }
@@ -131,7 +131,7 @@ footer {
         @include subtitulos;
     }
 
-    .view-all-index{
+    .view-all-index {
         margin-left: 16px;
         font-size: 15px;
         text-decoration: none;
@@ -529,12 +529,12 @@ form {
     align-items: center;
     gap: 20px;
 
-    .h2-product{
+    .h2-product {
         @include subtitulos;
         width: 90%;
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
@@ -546,7 +546,7 @@ form {
         gap: 20px;
         background-color: $color-body;
     }
-    
+
     .card {
         position: relative;
         overflow: hidden;
@@ -572,28 +572,28 @@ form {
         font-weight: 500;
         color: $color-autor;
     }
-    
+
     .botonera-p {
         text-align: center;
     }
-    
+
     .boton-p {
         @include boton;
         width: 70%;
         font-size: 18px;
         margin-bottom: 20px;
     }
-    
+
     .imagen {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-    
+
         img {
             width: 75%;
         }
     }
-    
+
     .precio {
         @include precio;
         text-align: center;
@@ -629,80 +629,127 @@ form {
 
 
 /* Final Product*/
-.venta-final{
+.venta-final {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 
-    .mostrador-libro{
+    .mostrador-libro {
         margin-top: 20px;
         margin-left: 20px;
         margin-right: 20px;
         width: 100%;
         text-align: center;
 
-        img{
+        img {
             width: 200px;
             text-align: center;
         }
     }
 
-    .comprar{
+    .comprar {
         background-color: $color-mostrador;
         margin-left: 20px;
         margin-right: 20px;
         width: 100%;
 
-        h1{
+        h1 {
             font-weight: 600
         }
 
-        .precio-final{
+        .precio-final {
             @include precio;
             font-weight: 500;
             font-size: 25px;
             margin-bottom: 0%;
         }
 
-        .medios-pago{
+        .medios-pago {
             text-decoration: none;
             font-size: 15px;
         }
 
-        .ficha-tecnica{
-            margin-top: 20px;
-            font-size: 25px;
-            color: grey;
+        .ficha-tecnica {
+            @include text-final
         }
 
-        ul{
+        ul {
             list-style: none;
         }
 
-        .botonera-p{
+        .botonera-p {
             text-align: center;
             margin-bottom: 20px;
         }
 
-        .boton-p{
+        .boton-p {
             @include boton;
             background-color: #2D3339;
             width: 70%;
         }
 
-        
+
     }
 
-    .datos-libro{
+    .datos-libro {
         border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
         width: 100%;
         margin-left: 20px;
         margin-right: 20px;
 
-        .sinopsis{
-            margin-top: 20px;
-            font-size: 25px;
-            color: grey;
+        .sinopsis {
+            @include text-final;
+        }
+
+        p{
+            margin-left: 20px;
+        }
+
+        .autoria {
+            @include text-final;
+        }
+    }
+
+    .relacionados {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: $color-mostrador;
+        display: flex;
+        flex-wrap: wrap;
+
+        h4 {
+            @include text-final;
+            color: black;
+            width: 100%;
+        }
+
+        .relacion-card {
+            width: 190px;
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+
+
+            img {
+                margin-top: 20px;
+                width: 180px;
+            }
+
+            .titulo-final {
+                p {
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                    height: 20px
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: black
+            }
         }
     }
 

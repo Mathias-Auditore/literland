@@ -50,4 +50,10 @@
         position: relative;
         overflow: hidden;
  }
+
+ @mixin text-final{
+   margin-top: 20px;
+   font-size: 25px;
+   color: grey;
+}
  
