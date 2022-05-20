@@ -127,7 +127,7 @@ footer {
     border-radius: 20px;
     background-color: $color-body;
 
-    .h2-index {
+    .h1-index {
         @include subtitulos;
     }
 
@@ -702,7 +702,7 @@ form {
             @include text-final;
         }
 
-        p{
+        p {
             margin-left: 20px;
         }
 
@@ -739,14 +739,20 @@ form {
             }
 
             .titulo-final {
+                height: 70px;
                 p {
-                    margin-bottom: 10px;
                     font-weight: 500;
-                    height: 20px
+                    margin-bottom: 10px;
                 }
             }
 
-            a{
+            .final-author {
+                p {
+                    margin-top: 10px;
+                }
+            }
+
+            a {
                 text-decoration: none;
                 color: black
             }

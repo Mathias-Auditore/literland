@@ -119,7 +119,7 @@ footer .redes-logo img {
   border-radius: 20px;
   background-color: #E5DEEE;
 }
-.tabla-index .h2-index {
+.tabla-index .h1-index {
   width: 100%;
   margin-top: 40px;
   font-size: 30px;
@@ -703,10 +703,15 @@ form .entrecalle #inputAddress2 {
   margin-top: 20px;
   width: 180px;
 }
+.venta-final .relacionados .relacion-card .titulo-final {
+  height: 70px;
+}
 .venta-final .relacionados .relacion-card .titulo-final p {
-  margin-bottom: 10px;
   font-weight: 500;
-  height: 20px;
+  margin-bottom: 10px;
+}
+.venta-final .relacionados .relacion-card .final-author p {
+  margin-top: 10px;
 }
 .venta-final .relacionados .relacion-card a {
   text-decoration: none;
