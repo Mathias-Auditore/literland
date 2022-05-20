@@ -140,7 +140,8 @@ footer {
     .card-index {
         padding-top: 20px;
         padding-bottom: 20px;
-        background-color: $color-mostrador;
+        background-color: $color-body;
+        border: 1px solid #C5C5C5;
         border-radius: 20px;
         margin-bottom: 30px;
     }
@@ -553,8 +554,8 @@ form {
         width: calc(50% - 20px);
         margin-top: 20px;
         margin-bottom: 20px;
-        background-color: $color-mostrador;
-        border: none;
+        background-color: $color-body;
+        border: 1px solid #C5C5C5;
         border-radius: 20px;
     }
 
@@ -648,29 +649,35 @@ form {
     }
 
     .comprar {
-        background-color: $color-mostrador;
+        background-color: $color-body;
+        border: 1px solid #C5C5C5;
+        border-radius: 10px;
         margin-left: 20px;
         margin-right: 20px;
         width: 100%;
 
         h1 {
-            font-weight: 600
+            font-weight: 600;
+            margin-left: 10px;
         }
 
         .precio-final {
             @include precio;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 25px;
+            margin-left: 10px;
             margin-bottom: 0%;
         }
 
         .medios-pago {
             text-decoration: none;
             font-size: 15px;
+            margin-left: 10px;
         }
 
         .ficha-tecnica {
-            @include text-final
+            @include text-final;
+            margin-left: 10px;
         }
 
         ul {
@@ -684,7 +691,7 @@ form {
 
         .boton-p {
             @include boton;
-            background-color: #2D3339;
+            background-color: #293FB9;
             width: 70%;
         }
 
@@ -716,7 +723,7 @@ form {
         margin-right: 20px;
         margin-bottom: 20px;
         width: 100%;
-        background-color: $color-mostrador;
+        background-color: $color-body;
         display: flex;
         flex-wrap: wrap;
 
@@ -731,6 +738,7 @@ form {
             text-align: center;
             margin-left: 15px;
             margin-right: 15px;
+            border: 1px solid #C5C5C5;
 
 
             img {
