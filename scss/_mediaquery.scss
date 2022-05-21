@@ -172,13 +172,6 @@
         width: 35%;
     }
 
-
-
-    .banner {
-        grid-area: banner;
-        background-size: 100%;
-    }
-
     .top-ventas {
         margin: 20px;
     }
@@ -266,9 +259,6 @@
 /* Mediaquery Ubication */
 @media (min-width: map-get($dimensions, phone)) {
 
-    .banner-ubication {
-        background-size: 225%;
-    }
 }
 
 @media (min-width: map-get($dimensions, tablet)) {
@@ -396,13 +386,19 @@
 
 @media (min-width: map-get($dimensions, tablet)) {
 
-    .banner-product {
-        background-size: 100%;
-    }
-
     .tabla-p {
+        justify-content: center;
+
         .titulo {
             height: 100px;
+        }
+
+        .card{
+            width: 300px;
+            
+            img{
+                width: 200px;
+            }
         }
     }
 }
