@@ -18,7 +18,7 @@ estrictamente de una sola herramienta.
 5_ He estudiado como poder hacer que mi pagina se vuelva accesible para todas las personas, independientemente de si pueden o no ver/entender claramente. Para ello hice uso
 de elementos del html que me permiten, por ejemplo, especificar más lo que se está viendo o tambien, poder navegar de una manera sencilla usando el tabulador y un programa que lea los elementos.
 
-6_ Tambien he intentado que el CEO sea lo más optimo posible para una mejor valoración del motor de busqueda.
+6_ Tambien he intentado que el SEO sea lo más optimo posible para una mejor valoración del motor de busqueda.
 
 7_ Hice que el codigo sea lo más entendible y funcional posible, por ejemplo, agregar o quitar libros de los catalogos no romperia la pagina, se podrian agregar paginas de libros con solo
 copiar, pegar y editar minimos detalles.
